@@ -25,8 +25,7 @@ description: A virtual proof that name is awesome!
 navbar-links:
   Tutorials:
     - Home Assistant:
-    - Tasker:
-      - Voice: "tasker/readme"
+    - Tasker: "https://broesie.github.io/tasker"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
