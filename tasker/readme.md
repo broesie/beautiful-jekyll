@@ -10,4 +10,10 @@ Those are categorized below.
 - Silent
 - Loud
 
-## Voice
+## Voice triggered:
+### Contacts:
+- Get Address
+- Get Age
+- Get Birthday
+- Get Mobile Phone Number
+- Get 
