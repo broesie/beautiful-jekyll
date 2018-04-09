@@ -23,7 +23,9 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
-  Tutorials: "tutorials"
+  Tutorials:
+    - Home Assistant:
+    - Tasker:
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
