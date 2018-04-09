@@ -26,6 +26,7 @@ navbar-links:
   Tutorials:
     - Home Assistant:
     - Tasker:
+      - Voice: "tasker/readme"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
