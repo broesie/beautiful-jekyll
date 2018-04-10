@@ -8,8 +8,9 @@ This task will tell you the current time. This is an extended version
 ### Step 1: Creating the task
 Now we make our task, called **AV Time**
 - Variable split: Name:**%TIME** Splitter:**.** (Splitter: point)
-- Variable set: **%time1** to **%TIME1 / 1** **(Enable: Do Math!)
-- Variable set: **%time1** to **%TIME2** **(Enable: Do Math!)
+- Variable set: **%time1** to **%TIME1 / 1** **(Enable: Do Math!)**
+- Variable set: **%time1** to **%TIME2** **(Enable: Do Math!)**
+
 
 - Say: **Goodmorning Name, did you sleep well** (Change Name by your name)
 - Perform Task: **AV Time**
