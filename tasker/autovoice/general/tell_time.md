@@ -13,7 +13,7 @@ Now we make our task, called **AV Time**
 - **If %time1>12**
   - Variable set: **%time1** to **%time1 - 12** **(Enable: Do Math!)**
 - **Else**
-  - Variable set: **%time1** to **time1**
+  - Variable set: **%time1** to **%time1**
 - **End if**
 - **If %time2 = 15**
   - Variable set: **%time2** to **quarter past**
