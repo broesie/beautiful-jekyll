@@ -62,8 +62,8 @@ Now we make our task, called **AV Birthday Reminder Check**
           - Button 2: **callbday**
           - Label 2: **CALL**
           - Icon 2: **ic_action_phone_start**
-        - **Else if %acnumber !Set**
-          - **AutoNotification**
+      - **Else if %acnumber !Set**
+        - **AutoNotification**
           - Title: **%event today**
           - Text: **It's %name's birthday. He/She was born on %borndate3 %months(%monthindex) %borndate1. He/She becomes %atdateyears years old.**
           - Icon: **/storage/emulated/0/AutoContacts/contactPhoto.png**
@@ -72,8 +72,8 @@ Now we make our task, called **AV Birthday Reminder Check**
           - Id: **Next event**
           - Icon 1: **ic_action_sms**
           - Icon 2: **ic_action_phone_start**
-        - **End if**
-      - **Else**
-        - **Stop**
       - **End if**
-    - **End for**
+  - **Else**
+    - **Stop**
+  - **End if**
+- **End for**
