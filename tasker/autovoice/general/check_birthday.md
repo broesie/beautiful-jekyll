@@ -8,27 +8,27 @@ This task will check if there is a birthday today. If so, it will notify you.
 - AutoContacts
 - AutoTools
 
-### Step 1: AutoVoice & AutoContacts
-Be sure that AutoVoice and AutoContacts are correctly installed. Also be sure, that all your contacts are listed in the database.
+### Step 1: AutoContacts
+Be sure that AutoContacts is correctly installed. Also be sure, that all your contacts are listed in the database.
 Before you start, refresh your contacts:
 - **Open AutoContacts**
 - Click on **Force Refresh Contacts**
 
-### Step 2: Creating the profile
-First, let's make a new profile, called **AV Contacts - Birthday**
-- Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
-- Choose the **The Hard Way**
-- Command: ```birthday of (?<name>.+)```
-- **Enable Regex**
-
-### Step 4: Creating the task
-Now we make our task, called **AV Contacts - Birthday**
+### Step 2: Creating the task
+Now we make our task, called **AV Birthday Reminder Check**
 - **AutoContacts Query 2.0**
-  - Names: **%name**
-  - Sort Direction: **Ascending**
-  - Fields to get: **Id,Event Start Date,Event Next Date,Name**
+  - Sort: **event_next_date**
+  - Fields to get: **Id,Event Next Date,Name,Event Start Date,Event Type Label**
   - **Joiner=:=**
-- **If %acname is Set**
+- **For** Variable: **%index** Items: **1:%acevent_next_date(#)**
+    - AutoTools Time: Time span between dates
+      - Start Date: **Year: %born_year**
+      - Start Date: **Month: %born_month**
+      - Start Day: **Day: %born_day**
+      - End Date: **Use now: true**
+      
+      
+      
   - **If %acevent_next_date is Set**
     - Variable set: **%born_date** to **%acevent_start_date(1)**
     - Variable split: **%born_date** Splitter:**-**
