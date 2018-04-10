@@ -23,3 +23,4 @@ Those are categorized below.
 - [Voice Assistant: Get Birthday](autovoice/contacts/get_birthday.md)
 - [Voice Assistant: Get Mobile Phone Number](autovoice/contacts/get_mobile_number.md)
 - [Voice Assistant: Get Picture](autovoice/contacts/get_picture.md)
+- [Voice Assistant: Send a message](autovoice/contacts/send_message.md)
