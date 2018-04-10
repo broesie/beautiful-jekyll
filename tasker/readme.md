@@ -16,6 +16,9 @@ Those are categorized below.
 
 
 ## Voice triggered:
+### Voice General:
+- Voice General: Good morning!
+
 ### Voice Assistant - Contacts:
 - [Voice Assistant: Call Contact](autovoice/contacts/call_contact.md)
 - [Voice Assistant: Get Address](autovoice/contacts/get_address.md)
