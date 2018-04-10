@@ -11,9 +11,9 @@ Those are categorized below.
 - Silent
 
 ## Battery:
-- Battery at specific percentage
-- Battery is charging
-- Battery is descharging
+- [Battery: Battery at specific percentage](battery/battery_specific_percent.md) 
+- Battery: Battery is charging
+- Battery: Battery is descharging
 
 ## Voice triggered:
 ### Voice Assistant - Contacts:
