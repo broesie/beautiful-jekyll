@@ -23,7 +23,7 @@ Now we make our task, called **AV Time Slept**
 - **Autonotification**
   - Use HTML: **false**
   - Title: **Time slept**
-  - Text: **Tonight you have slept for %hoursleep and %minutesleep minutes**
+  - Text: **You have slept for %hoursleep and %minutesleep minutes**
   - Icon: **Choose your icon**
   - Statusbar icon: **Choose your icon**
   
