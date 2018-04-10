@@ -9,7 +9,7 @@ This task will tell you the current time. This is 24h and it is also an extended
 Now we make our task, called **AV Time**
 - Variable split: Name:**%TIME** Splitter:**.** (Splitter: point)
 - Variable set: **%time1** to **%TIME1 / 1** **(Enable: Do Math!)**
-- Variable set: **%time1** to **%TIME2** **(Enable: Do Math!)**
+- Variable set: **%time1** to **%TIME2**
 - **If %time1>12**
   - Variable set: **%time1** to **%time1 - 12** **(Enable: Do Math!)**
 - **Else**
