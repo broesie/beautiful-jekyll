@@ -44,8 +44,8 @@ Now we make our task, called **AV Contacts - Birthday**
     - Variable set: **%age** to **%atdateyears**
     - Variable set: **%monthindex** to **%born_month / 1** **(Do Math: Enabled!)**
     - Variable set: **%months** to **January,February,March,April,May,June,July,August,September,October,November,December**
-    - Variable split: %months** Splitter:**,** (Splitter is comma)
-    - Say: **e birthday of %acname is on %born_day % months(%monthindex). This person is now %age years old**
+    - Variable split: **%months** Splitter:**,** (Splitter is comma)
+    - Say: **The birthday of %acname is on %born_day % months(%monthindex). This person is now %age years old**
   - **Else**
     - Say: **Sorry, no birthday has been found**
   - **End if**
