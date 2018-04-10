@@ -12,7 +12,7 @@ Now we make our task, called **AV Date**
 - Variable set: **%months** to **January,February,March,April,May,June,July,August,September,October,November,December**
 - Variable split: **%months** Splitter:**,** (Splitter is comma)
 - Variable set: **%year** to **20%DATE3**
-- Say: **It is now %DAYW %DATE2 %months(%monthindex) %year
+- Say: **It is now %DAYW %DATE2 %months(%monthindex) %year**
   
 ### Step 2: Creating the profile
 If you want to use it with your voice assistant, you can also create a profile. Create a AutoVoice context/trigger.
