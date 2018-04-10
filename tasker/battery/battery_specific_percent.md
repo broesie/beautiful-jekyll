@@ -9,7 +9,7 @@ This is pretty simple!
 ### Example 1: Battery is full (100%)
 #### Creating the profile
 First, let's make a new profile, called **Battery 99-100**
-- Create a new trigger/context: **State > Power > Batery Level**
+- Create a new trigger/context: **State > Power > Battery Level**
 - From **99** To **100**
 
 #### Creating the task
@@ -22,7 +22,7 @@ As you see, it is pretty easy. You can create any notification on any percentage
 ### Example 2: Battery is 10%
 #### Creating the profile
 First, let's make a new profile, called **Battery 09-10**
-- Create a new trigger/context: **State > Power > Batery Level**
+- Create a new trigger/context: **State > Power > Battery Level**
 - From **9** To **10**
 
 #### Creating the task
