@@ -88,7 +88,7 @@ Create a task, called **AN B-day SMS**
 - Status Bar **Collapsed**
 - **If %Bdaynr is Set**
   - Variable set: **bdaytext** to **Happy B-day and many years! Enjoy! Greetings Ryoen**
-  - **AutoTools Web Screen**
+  - **AutoTools Web Screen** (I created my own webscreen, not included here)
 - **Else if %Bdaynr !Set**
   - Flash: **Sorry, no mobile number is found**
 - **End If**
