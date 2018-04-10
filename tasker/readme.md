@@ -12,8 +12,8 @@ Those are categorized below.
 
 ## Battery:
 - [Battery: Battery at specific percentage](battery/battery_specific_percent.md) 
-- Battery: Battery is charging
-- Battery: Battery is descharging
+- [Battery: Battery is charging / decharging](battery/battery_charge_decharge)
+
 
 ## Voice triggered:
 ### Voice Assistant - Contacts:
