@@ -11,8 +11,8 @@ Now we make our task, called **AV Good Morning**
 - Say: **Goodmorning Name, did you sleep well** (Change Name by your name)
 - Perform Task: **AV Time**
 - Perform Task: **AV Date**
-- Perform Task: **Time Slept**
-- Perform Task: **Birthday Reminder Check**
+- Perform Task: **AV Time Slept**
+- Perform Task: **AV Birthday Reminder Check**
 - Say: **I'm now checking the weather**
 - Perform Task: **AV Weather Forecast**
 - Perform Task: **AV Events Today**
