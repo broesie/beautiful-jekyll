@@ -6,9 +6,14 @@ Those are categorized below.
 ## General profiles / tasks:
 - Home
 - Away
+- Loud
 - Night
 - Silent
-- Loud
+
+# Battery
+- Battery at specific percentage
+- Battery is charging
+- Battery is descharging
 
 ## Voice triggered:
 ### Contacts:
@@ -16,4 +21,4 @@ Those are categorized below.
 - Get Age
 - Get Birthday
 - Get Mobile Phone Number
-- Get 
+- Get Picture
