@@ -10,7 +10,7 @@ Those are categorized below.
 - Night
 - Silent
 
-# Battery
+## Battery
 - Battery at specific percentage
 - Battery is charging
 - Battery is descharging
