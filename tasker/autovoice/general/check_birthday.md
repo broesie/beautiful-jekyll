@@ -80,7 +80,7 @@ Now we make our task, called **AV Birthday Reminder Check**
 
 ### Step 3: Creating a task that react on the call button
 Create a task, called **AN B-day Call**
-- Call Number: **%Number**
+- Call Number: **%Bdaynr**
 
 ### Step 4: Creating a task that react on the message button
 Create a task, called **AN B-day SMS**
@@ -93,4 +93,14 @@ Create a task, called **AN B-day SMS**
   - Flash: **Sorry, no mobile number is found**
 - **End If**
 
+### Step 5: Creating a profile to react on the call button
+Call the profile: **AN B-day Call**
+- Create a new trigger/context: **Event > Plugin > AutoNotification > AutoNotification**
+- AutoNotification: **callbday**
+- Link it to the task **AN B-day Call**
 
+### Step 6: Creating a profile to react on the call button
+Call the profile: **AN B-day SMS**
+- Create a new trigger/context: **Event > Plugin > AutoNotification > AutoNotification**
+- AutoNotification: **smsbday**
+- Link it to the task **AN B-day SMS**
