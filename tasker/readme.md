@@ -4,11 +4,11 @@ Those are categorized below.
 # Tasker categories:
 
 ## General profiles / tasks:
-- Home
-- Away
-- Loud
-- Night
-- Silent
+- Profile: Home
+- Profile: Away
+- Profile: Loud
+- Profile: Night
+- Profile: Silent
 
 ## Battery:
 - [Battery: Battery at specific percentage](battery/battery_specific_percent.md) 
