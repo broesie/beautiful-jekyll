@@ -4,6 +4,10 @@ Also check my youtube channel. I made more then 100 videotutorials of tasker. Yo
 
 # Tasker categories:
 
+## Necessary plugins:
+- [AutoApps (AutoVoice, AutoNotification, AutoTools, AutoWeb, etc...)](https://play.google.com/store/apps/details?id=com.joaomgcd.autoappshub)
+- [Join](https://play.google.com/store/apps/details?id=com.joaomgcd.join)
+
 ## General profiles / tasks:
 - Profile: Home
 - Profile: Away
