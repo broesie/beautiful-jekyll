@@ -2,11 +2,11 @@ On this page, you will find several tutorials related with tasker.
 Those are categorized below.
 Also check my youtube channel. I made more then 100 videotutorials of tasker. You can find it [here](https://www.youtube.com/watch?v=N3N76aA9D5U&list=PLxgX2--RzNFwmxlBsSD1NsWv2j9b7mHbM)
 
-# Tasker categories:
-
-## Necessary plugins:
+# Necessary plugins:
 - [AutoApps (AutoVoice, AutoNotification, AutoTools, AutoWeb, etc...)](https://play.google.com/store/apps/details?id=com.joaomgcd.autoappshub)
 - [Join](https://play.google.com/store/apps/details?id=com.joaomgcd.join)
+
+# Tasker categories:
 
 ## General profiles / tasks:
 - Profile: Home
