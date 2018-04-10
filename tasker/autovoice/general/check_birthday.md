@@ -21,11 +21,24 @@ Now we make our task, called **AV Birthday Reminder Check**
   - Fields to get: **Id,Event Next Date,Name,Event Start Date,Event Type Label**
   - **Joiner=:=**
 - **For** Variable: **%index** Items: **1:%acevent_next_date(#)**
-    - AutoTools Time: Time span between dates
-      - Start Date: **Year: %born_year**
-      - Start Date: **Month: %born_month**
-      - Start Day: **Day: %born_day**
+    - AutoTools Time: 
       - End Date: **Use now: true**
+      - Fields to get: **Total hours**
+    - **If %atdatetotalhours>0**
+      - Variable set: **%Bdayname** to **%acname(%index)**
+      - Variable set: **%contactid** to **%acid(%index)**
+      - Variable set: **%event** to **%acevent_type_label(%index)**
+      - Variable set: **%borndate** to **%acevent_start_date**
+      - Variable split: **%borndate** Splitter:**-**
+      - Variable set: **%monthindex** to **%borndate2 / 1** **(Do Math: Enabled!)**
+      - Variable set: **%months** to **January,February,March,April,May,June,July,August,September,October,November,December**
+      - Variable split: **%months** Splitter:**,** (Splitter is comma)
+      - AutoTools Time:
+        - Start Date: Year: **%borndate1**
+        - End Date: **Use now: true**
+      - Variable set: **%Bdayyears** to **%atdateyears**
+
+  
       
       
       
