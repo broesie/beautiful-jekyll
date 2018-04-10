@@ -37,30 +37,43 @@ Now we make our task, called **AV Birthday Reminder Check**
         - Start Date: Year: **%borndate1**
         - End Date: **Use now: true**
       - Variable set: **%Bdayyears** to **%atdateyears**
-
-  
-      
-      
-      
-  - **If %acevent_next_date is Set**
-    - Variable set: **%born_date** to **%acevent_start_date(1)**
-    - Variable split: **%born_date** Splitter:**-**
-    - Variable set: **%born_year** to **%born_date1**
-    - Variable set: **%born_month** to **%born_date2 / 1** **(Do Math: Enabled!)**
-    - Variable set: **%born_day** to **%born_date3**
-    - AutoTools Time: Time span between dates
-      - Start Date: **Year: %born_year**
-      - Start Date: **Month: %born_month**
-      - Start Day: **Day: %born_day**
-      - End Date: **Use now: true**
-    - Variable set: **%age** to **%atdateyears**
-    - Variable set: **%monthindex** to **%born_month / 1** **(Do Math: Enabled!)**
-    - Variable set: **%months** to **January,February,March,April,May,June,July,August,September,October,November,December**
-    - Variable split: **%months** Splitter:**,** (Splitter is comma)
-    - Say: **The birthday of %acname is on %born_day % months(%monthindex). This person is now %age years old**
-  - **Else**
-    - Say: **Sorry, no birthday has been found**
-  - **End if**
-- **Else**  
-  - Say: **There is no contact found with that name**
-- **End If**
+      - **AutoContacts Query 2.0**
+        - Ids: **contactid**
+        - Phone Type: **Mobile**
+        - Sort Direction: **Ascending**
+        - Fields to get: **Phone Number,Id,Phone Number Type,Name**
+        - Joiner: **=:=**
+      - **AutoContacts Details**
+        - Contact Id: **%acid**
+        - Get Picture: **true**
+        - Full Size: **true**
+      - **If %acnumber is Set**
+        - Variable set: **%Bdaynr** to **%acnumber**
+        - **AutoNotification**
+          - Title: **%event today**
+          - Text: **It's %name's birthday. He/She was born on %borndate3 %months(%monthindex) %borndate1. He/She becomes %atdateyears years old.**
+          - Icon: **/storage/emulated/0/AutoContacts/contactPhoto.png**
+          - Statusbar Icon: **ic_action_balloon**
+          - Statusbar Text Size: **16**
+          - Id: **Next event**
+          - Button 1: **smsbday**
+          - Label 1: **MESSAGE**
+          - Icon 1: **ic_action_sms**
+          - Button 2: **callbday**
+          - Label 2: **CALL**
+          - Icon 2: **ic_action_phone_start**
+        - **Else if %acnumber !Set**
+          - **AutoNotification**
+          - Title: **%event today**
+          - Text: **It's %name's birthday. He/She was born on %borndate3 %months(%monthindex) %borndate1. He/She becomes %atdateyears years old.**
+          - Icon: **/storage/emulated/0/AutoContacts/contactPhoto.png**
+          - Statusbar Icon: **ic_action_balloon**
+          - Statusbar Text Size: **16**
+          - Id: **Next event**
+          - Icon 1: **ic_action_sms**
+          - Icon 2: **ic_action_phone_start**
+        - **End if**
+      - **Else**
+        - **Stop**
+      - **End if**
+    - **End for**
