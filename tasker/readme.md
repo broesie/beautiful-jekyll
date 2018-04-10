@@ -18,7 +18,7 @@ Those are categorized below.
 ## Voice triggered:
 ### Contacts:
 - [Get Address](autovoice/contacts/get_address.md)
-- Get Age
+- [Get Age](autovoice/contacts/get_age.md)
 - Get Birthday
 - [Get Mobile Phone Number](autovoice/contacts/get_mobile_number.md)
 - [Get Picture](autovoice/contacts/get_picture.md)
