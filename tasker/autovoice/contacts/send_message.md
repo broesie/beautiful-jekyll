@@ -18,7 +18,7 @@ Before you start, refresh your contacts:
 First, let's make a new profile, called **AV Contacts - Send Message**
 - Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
 - Choose the **The Hard Way**
-- Command: ```call (?<name>.+)```
+- Command: ```send a message to (?<name>.+)```
 - **Enable Regex**
 
 ### Step 3: Creating the task
