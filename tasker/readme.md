@@ -17,6 +17,7 @@ Also check my youtube channel. I made more then 100 videotutorials of tasker. Yo
 
 ## Morning Task:
 - [Morning: Good morning!](autovoice/general/good_morning.md)
+- Morning: Check Birthdays
 - Morning: Tell Appointments
 - [Morning: Tell Date](autovoice/general/tell_date.md)
 - [Morning: Tell Time](autovoice/general/tell_time.md)
