@@ -19,6 +19,6 @@ Those are categorized below.
 ### Contacts:
 - [Get Address](autovoice/contacts/get_address.md)
 - [Get Age](autovoice/contacts/get_age.md)
-- Get Birthday
+- [Get Birthday](autovoice/contacts/get_birthday.md)
 - [Get Mobile Phone Number](autovoice/contacts/get_mobile_number.md)
 - [Get Picture](autovoice/contacts/get_picture.md)
