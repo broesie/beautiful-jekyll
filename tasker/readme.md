@@ -15,7 +15,7 @@ Those are categorized below.
 - [Battery: Battery is charging / decharging](battery/battery_charge_decharge.md)
 
 ## Morning Task:
-- Morning: Good morning!
+- [Morning: Good morning!](autovoice/general/good_morning.md)
 - Morning: Tell Appointments
 - Morning: Tell Date
 - Morning: Tell Time
