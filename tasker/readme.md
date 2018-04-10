@@ -17,6 +17,7 @@ Those are categorized below.
 
 ## Voice triggered:
 ### Voice Assistant - Contacts:
+- [Voice Assistant: Call Contact](autovoice/contacts/call_contact.md)
 - [Voice Assistant: Get Address](autovoice/contacts/get_address.md)
 - [Voice Assistant: Get Age](autovoice/contacts/get_age.md)
 - [Voice Assistant: Get Birthday](autovoice/contacts/get_birthday.md)
