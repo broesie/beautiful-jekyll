@@ -20,5 +20,5 @@ Those are categorized below.
 - [Get Address](autovoice/contacts/get_address.md)
 - Get Age
 - Get Birthday
-- Get Mobile Phone Number
+- [Get Mobile Phone Number](autovoice/contacts/get_mobile_number.md)
 - Get Picture
