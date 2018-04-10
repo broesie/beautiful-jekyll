@@ -1,41 +1,26 @@
 # Tell Weather Forecast
-This task will tell you the weather forecast.
+This task will tell you the weather forecast using Wunderground.
 
 ### Requirements:
 - An android phone
 - Tasker
+- AutoWeb
 
 ### Step 1: Creating the task
-Now we make our task, called **AV Time**
-- Variable split: Name:**%TIME** Splitter:**.** (Splitter: point)
-- Variable set: **%time1** to **%TIME1 / 1** **(Enable: Do Math!)**
-- Variable set: **%time1** to **%TIME2**
-- **If %time1>12**
-  - Variable set: **%time1** to **%time1 - 12** **(Enable: Do Math!)**
-- **Else**
-  - Variable set: **%time1** to **%time1**
-- **End if**
-- **If %time2 = 15**
-  - Variable set: **%time2** to **quarter past**
-  - Say: **It is now %time2 %time1**
-- **Else if %time2 = 30**
-  - Variable set: **%time2** to **half past**
-  - Say: **It is now %time2 %time1**
-- **Else if %time2 = 45**
-  - Variable set: **%time2** to **quarter to**
-  - Variable set: **%time1** to **%time1 +1** **(Enable: Do Math!)**
-  - Say: **It is now %time2 %time1**
-- **Else if %time2 = 00**  
-  - Say: **It is now %time1 o'clock**
-- **Else**
-  - Say: **It is now %time1 hour %time2**
-- **End if**
+Now we make our task, called **AV Weather Forecast**
+- AutoWeb
+  - API: **Weather Underground**
+  - API Action: **Conditions**
+  - Query: **Country/City** eg: US/New York
+  - Language: **Your language code**
+- Flash: **%display_location_full %temp_c %weather** you can also use f for fahrenheit
+- Say: **The weather forecast: Today: %weather, it is now %temp_c degrees celcius. The maximum temperature is %highcelcius(1) degrees celcius and the minimum temperature is %lowcelcius(1) degrees celcius. The probability of rain is %rainprobability(1) procent and the humidity is %relative_humidity.
   
 ### Step 2: Creating the profile
 If you want to use it with your voice assistant, you can also create a profile. Create a AutoVoice context/trigger.
-Call the profile: **AV Time**
+Call the profile: **AV Weather Forecast**
 - Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
 - Choose the **The Hard Way**
-- Command: ```what time is it```
+- Command: ```what's the weather```
 - **Enable Regex**
-- Link the task **AV Time** to it
+- Link the task **AV Weather Forecast** to it
