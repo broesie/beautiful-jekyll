@@ -2,11 +2,11 @@
 This tutorial will explain, how to retrieve the picture of a specific contact.
 We can use a command like this: **show me a picture of John.**
 
-## Requirements:
+### Requirements:
 - An android phone
 - Tasker
 - AutoVoice
-- Autocontacts
+- AutoContacts
 
 ### Step 1: Create a folder where the picture will be stored
 Create a folder **AutoContacts** on your phone. Mostly the full path will be something like this: **storage/emulated/0/AutoContacts/**
