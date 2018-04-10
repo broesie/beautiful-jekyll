@@ -21,13 +21,13 @@ Also check my youtube channel. I made more then 100 videotutorials of tasker. Yo
 - [Morning: Tell Date](autovoice/general/tell_date.md)
 - [Morning: Tell Time](autovoice/general/tell_time.md)
 - Morning: Tell Time Slept
-- Morning: Tell Weather Forecast
+- [Morning: Weather Forecast](autovoice/general/tell_weather.md)
 
 ## Voice triggered:
 ### Voice General:
 - [Voice General: Tell Date](autovoice/general/tell_date.md)
 - [Voice General: Tell Time](autovoice/general/tell_time.md)
-- Voice General: Tell Weather Forecast
+- [Voice General: Weather Forecast](autovoice/general/tell_weather.md)
 
 ### Voice Assistant - Contacts:
 - [Voice Assistant: Call Contact](autovoice/contacts/call_contact.md)
