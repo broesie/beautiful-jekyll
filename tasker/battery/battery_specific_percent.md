@@ -18,6 +18,7 @@ Now we make our task, called **Battery 100%**
 
 As you see, it is pretty easy. You can create any notification on any percentage you want... So let's create another on 10%...
 
+
 ### Example 2: Battery is 10%
 #### Creating the profile
 First, let's make a new profile, called **Battery 09-10**
