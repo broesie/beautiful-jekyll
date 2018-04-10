@@ -24,8 +24,8 @@ Those are categorized below.
 
 ## Voice triggered:
 ### Voice General:
-- Voice General: Tell Date
-- Voice General: Tell Time
+- [Voice General: Tell Date](autovoice/general/tell_date.md)
+- [Voice General: Tell Time](autovoice/general/tell_time.md)
 - Voice General: Tell Weather Forecast
 
 ### Voice Assistant - Contacts:
