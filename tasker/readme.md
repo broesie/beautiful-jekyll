@@ -18,7 +18,7 @@ Those are categorized below.
 - [Morning: Good morning!](autovoice/general/good_morning.md)
 - Morning: Tell Appointments
 - Morning: Tell Date
-- Morning: Tell Time
+- [Morning: Tell Time](autovoice/general/tell_time.md)
 - Morning: Tell Time Slept
 - Morning: Tell Weather Forecast
 
