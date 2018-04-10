@@ -2,11 +2,11 @@
 This tutorial will explain, how to retrieve the mobile phone number of a specific contact.
 We can use a command like this: **What's mobile of John.**
 
-## Requirements:
+### Requirements:
 - An android phone
 - Tasker
 - AutoVoice
-- Autocontacts
+- AutoContacts
 
 ### Step 1: AutoVoice & AutoContacts
 Be sure that AutoVoice and AutoContacts are correctly installed. Also be sure, that all your contacts are listed in the database.
