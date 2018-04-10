@@ -1,0 +1,42 @@
+# Get the age of your contacts by using AutoVoice
+This tutorial will explain, how to retrieve the age of a specific contact.
+We can use a command like this: **how old is John.**
+
+### Requirements:
+- An android phone
+- Tasker
+- AutoVoice
+- AutoContacts
+- AutoTools
+
+### Step 1: AutoVoice & AutoContacts
+Be sure that AutoVoice and AutoContacts are correctly installed. Also be sure, that all your contacts are listed in the database.
+Before you start, refresh your contacts:
+- **Open AutoContacts**
+- Click on **Force Refresh Contacts**
+
+### Step 2: Creating the profile
+First, let's make a new profile, called **AV Contacts - Age**
+- Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
+- Choose the **The Hard Way**
+- Command: ```how old is (?<name>.+)```
+- **Enable Regex**
+
+### Step 4: Creating the task
+Now we make our task, called **AV Contacts - Age**
+- **AutoContacts Query 2.0**
+  - Names: **%name**
+  - Sort Direction: **Ascending**
+  - Fields to get: **Photo,Name,Id**
+  - **Joiner=:=**
+- **If %acname is Set**
+  - **Autocontacts Details**
+    - Contact Id: **%acid(1)**
+    - Get Picture: **True**
+    - Full Size: **True**
+  - Flash: **%acpicturefile**
+  - Open File: **%acpicturefile**
+- **Else if %acname!Set**
+  - Say: **There is no contact found with that name**
+- **End if**
+
