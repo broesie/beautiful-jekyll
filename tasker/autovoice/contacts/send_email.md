@@ -1,6 +1,6 @@
-# Send a message to your contacts by using AutoVoice
-This tutorial will explain, how to to send a message to a specific contact.
-We can use a command like this: **Send a message to John.**
+# Send a e-mail to your contacts by using AutoVoice
+This tutorial will explain, how to to send a e-mail to a specific contact.
+We can use a command like this: **Send an e-mail to John.**
 
 ### Requirements:
 - An android phone
@@ -15,31 +15,32 @@ Before you start, refresh your contacts:
 - Click on **Force Refresh Contacts**
 
 ### Step 2: Creating the profile
-First, let's make a new profile, called **AV Contacts - Send Message**
+First, let's make a new profile, called **AV Contacts - Send Email**
 - Create a new trigger/context: **Event > Plugin > AutoVoice > Recognized**
 - Choose the **The Hard Way**
-- Command: ```send a message to (?<name>.+)```
+- Command: ```mail to (?<name>.+)```
 - **Enable Regex**
 
 ### Step 3: Creating the task
-Now we make our task, called **AV Contacts - Send Message**
+Now we make our task, called **AV Contacts - Send Email**
 - Flash: **Searching for names...**
 - **AutoContacts Query 2.0**
   - Names: **%name**
   - Sort Direction: **Ascending**
-  - Fields to get: **Name,Id,Phone Number**
+  - Fields to get: **Email Address,Name,Id**
   - **Joiner=:=**
 - **If %acname is Set**
-  - Variable set: **%number** to **%acnumber**
-  - Flash: **The following contact has been found: %acname(1), what would you like to include in your message?**
-  - Say: **The following contact has been found: %acname(1), what would you like to include in your message?**
-  - AutoVoice Recognize:
-    - **Voice command without headset**
-  - Variable set: **%message** to **%avcomm**
-  - Say: **The message is: %message and it is ready to send to %acname. Are you sure?**  
-  - AutoVoice Recognize:
-    - **Voice command without headset**
-  - Send SMS: Number: **%acnumber** Message: **%message** if **%avcomm ~R yes**
+  - Say: **The following contact has been found: %acname(1)**
+  - **If %acemail is Set**
+    - Flash: **%acemail**  
+    - Say: **What would you like to include in your message?**
+    - AutoVoice Recognize:
+      - **Voice command without headset**
+    - Compose Email: Recipient: **%acemail** if **%avcomm !~ cancel**
+    - Say: **Ok, I will cancel your email** if **%avcomm ~R cancel**
+  - **Else**
+    - Say: **Sorry, this person doesn't have an emailaddress**
+  - **Endif**
 - **Else**
   - Say: **There is no contact found with that name**
 - **End if**
