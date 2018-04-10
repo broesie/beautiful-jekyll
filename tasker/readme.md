@@ -24,3 +24,4 @@ Those are categorized below.
 - [Voice Assistant: Get Mobile Phone Number](autovoice/contacts/get_mobile_number.md)
 - [Voice Assistant: Get Picture](autovoice/contacts/get_picture.md)
 - [Voice Assistant: Send a message](autovoice/contacts/send_message.md)
+- [Voice Assistant: Send an e-mail](autovoice/contacts/send_email.md)
