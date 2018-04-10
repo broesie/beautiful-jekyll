@@ -12,7 +12,7 @@ Those are categorized below.
 
 ## Battery:
 - [Battery: Battery at specific percentage](battery/battery_specific_percent.md) 
-- [Battery: Battery is charging / decharging](battery/battery_charge_decharge)
+- [Battery: Battery is charging / decharging](battery/battery_charge_decharge.md)
 
 
 ## Voice triggered:
