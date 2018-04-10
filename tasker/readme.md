@@ -14,10 +14,19 @@ Those are categorized below.
 - [Battery: Battery at specific percentage](battery/battery_specific_percent.md) 
 - [Battery: Battery is charging / decharging](battery/battery_charge_decharge.md)
 
+## Morning Task:
+- Morning: Good morning!
+- Morning: Tell Appointments
+- Morning: Tell Date
+- Morning: Tell Time
+- Morning: Tell Time Slept
+- Morning: Tell Weather Forecast
 
 ## Voice triggered:
 ### Voice General:
-- Voice General: Good morning!
+- Voice General: Tell Date
+- Voice General: Tell Time
+- Voice General: Tell Weather Forecast
 
 ### Voice Assistant - Contacts:
 - [Voice Assistant: Call Contact](autovoice/contacts/call_contact.md)
