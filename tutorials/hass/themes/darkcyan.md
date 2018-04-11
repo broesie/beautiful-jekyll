@@ -4,7 +4,7 @@ title: Dark Cyan
 comments: true
 ---
 ## Installation: 
-Put this code in your themes.yaml file. Check out the installation file for more info (https://github.com/broesie/Home-Assistant/blob/master/Templates/Installation.md)
+Put this code in your themes.yaml file. Check out [the installation file](https://broesie.github.io/tutorials/hass/installation/install_themes) for more info.
 
 ``` 
 darkcyan:
