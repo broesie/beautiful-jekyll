@@ -1,4 +1,7 @@
-# Get the address of your contacts by using AutoVoice
+---
+layout: tutorial
+title: Get the address of your contacts by using AutoVoice
+---
 This tutorial will explain, how to retrieve the address of a specific contact.
 We can use a command like this: **What's the address of John.**
 
