@@ -1,4 +1,7 @@
-# Get the the mobile phone number of your contacts by using AutoVoice
+---
+layout: tutorial
+title: Get the mobile phone number of your contacts by using AutoVoice
+---
 This tutorial will explain, how to retrieve the mobile phone number of a specific contact.
 We can use a command like this: **What's mobile of John.**
 
