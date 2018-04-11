@@ -1,8 +1,9 @@
 ---
 layout: tutorial
-title: Updating your Home-Assistant version: Rpi - Jessie)
+title: Updating your Home-Assistant
 comments: true
 ---
+## Updating (Rpi - Jessie)
 
 ```
 - Open Putty
@@ -12,5 +13,5 @@ comments: true
 - pip3 install --upgrade homeassistant
 ```
 
-# Documentation:
+## Documentation:
 - [documentation](https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/#upgrading)
