@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: tutorial
 title: First post!
 ---
 
