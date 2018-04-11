@@ -49,7 +49,7 @@ Don't forget to enable in your android settings, the accessibility for Autovoice
 - Choose **Event > Plugin > Autovoice Recognize**
 - Choose **Advanced**
 - **Checkmark Regex**
-- As command filter use: ```(?< task >.+) my (?< device >.+)``` (Without any spaces between the < and > !)
+- As command filter use: ```(?<task>.+) my (?<device>.+)```
 
 ##### Your task:
 
@@ -84,7 +84,7 @@ This is a task to turn off the living lights
 - Choose **Event > Plugin > Autovoice Recognize**
 - Choose **Advanced**
 - **Checkmark Regex**
-- As command filter use: ```dim (?< device >.+) to (?< percentage >.+)%``` (Without any spaces between the < and > !)
+- As command filter use: ```dim (?<device>.+) to (?<percentage>.+)%```
 
 ##### Your task:
 
@@ -100,8 +100,8 @@ This is a task to turn off the living lights
 
 Above a little example to turn on or turn off things, but you can create also other profiles likes:
 
-- ```dim (?< device >.+) to (?< percentage >.+)%``` (Without any spaces between the < and > !)
-- ```activate (?< scene >.+) mode``` (Without any spaces between the < and > !)
+- ```dim (?<device>.+) to (?<percentage>.+)%```
+- ```activate (?<scene>.+) mode```
 - ....
 
 You only need to change data and attributes...
