@@ -9,7 +9,7 @@ comments: true
 
 ### Plugins:
 AutoNotification can be found [here](https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification)
-I recommend to buy the unlocked version, or to get a subscription to AutoApps (full pack, all unlocked + betas + alphas)
+I recommend to buy the unlocked version, or to get a subscription to [AutoApps](https://play.google.com/store/apps/details?id=com.joaomgcd.autoappshub) (full pack, all unlocked + betas + alphas)
 
 ### Step 1: Checking your global variables
 Be sure before you start, that you have setup your tasker correctly, by creating global variables. See also how to [configure Tasker for Home Assistant](https://broesie.github.io/tutorials/hass/tasker_integration/set_global_vars)
