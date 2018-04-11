@@ -1,4 +1,7 @@
-# Get the birthday of your contacts by using AutoVoice
+---
+layout: tutorial
+title: Get the birthday of your contacts by using AutoVoice
+---
 This tutorial will explain, how to retrieve the birthday of a specific contact.
 We can use a command like this: **when is the birthday of John.**
 
