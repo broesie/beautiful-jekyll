@@ -8,11 +8,11 @@ This tutorial will learn you how to create notifications on your phone by using 
 ## Requirements:
 - An android phone
 - Tasker
-- Join (You can find it here: https://play.google.com/store/apps/details?id=com.joaomgcd.join)
-- Autonotification (option) (You can find it here: https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification)
+- [Join](https://play.google.com/store/apps/details?id=com.joaomgcd.join)
+- [option: Autonotification](You can find it here: https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification)
 
 ### Step 1: Configure Join in Home Assistant
-- Configure your hass with Join (See: https://www.home-assistant.io/components/joaoapps_join/)
+- Configure your hass with Join. See [guide](https://www.home-assistant.io/components/joaoapps_join)
 
 ### Step 2: Create automations in Home Assistant
 Now it time to create some automations, examples are like this:
