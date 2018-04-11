@@ -24,7 +24,7 @@ description: A Tasker Guru
 # List of links in the navigation bar
 navbar-links:
   Tutorials:
-    - Home Assistant:
+    - Home Assistant: "https://broesie.github.io/tutorials/hass/overview"
     - Tasker: "https://broesie.github.io/tutorials/tasker/overview"
   About Me: "aboutme"
   Resources:
