@@ -1,4 +1,7 @@
-# Good morning task
+---
+layout: tutorial
+title: Good morning task
+---
 This task is a combination of many other tasks. You can execute that every morning.
 When this task is executed, it will do many things like: saying morning message, tell me the weather, tell me the birthdays today, tell me my appointments, etc...
 
