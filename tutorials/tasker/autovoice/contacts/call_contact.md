@@ -1,4 +1,7 @@
-# Call your contacts by using AutoVoice
+---
+layout: tutorial
+title: Call your contacts by using AutoVoice
+---
 This tutorial will explain, how to to call a specific contact.
 We can use a command like this: **Call John.**
 
