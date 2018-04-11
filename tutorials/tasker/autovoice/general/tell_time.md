@@ -1,4 +1,7 @@
-# Tell Time
+---
+layout: tutorial
+title: Tell Time
+---
 This task will tell you the current time. This is 24h and it is also an extended version.
 
 ### Requirements:
