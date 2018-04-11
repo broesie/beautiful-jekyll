@@ -8,7 +8,7 @@ This tutorial will learn you how to check states in tasker of your Home Assistan
 ## Requirements:
 - An android phone
 - Tasker
-- (option) AutoTools (find it here: https://play.google.com/store/apps/details?id=com.joaomgcd.autotools)
+- (option) [AutoTools](https://play.google.com/store/apps/details?id=com.joaomgcd.autotools)
 
 ### Description:
 The're 2 ways to retrieve information from Home Assistant to your Tasker. You can use HTTP GET or you can use the AutoTools plugin.
