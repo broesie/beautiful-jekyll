@@ -1,4 +1,8 @@
-# Home-Assistant
+---
+layout: tutorial
+title: Installing Home-Assistant
+comments: true
+---
 Running on a Raspberry PI 3 Model B  
 Raspbian Jessie 8.0
 
