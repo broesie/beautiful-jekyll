@@ -153,7 +153,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: "tutorial"
     values:
       layout: "tutorial"
       comments: true  # add comments to all blog posts
