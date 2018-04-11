@@ -1,4 +1,7 @@
-# Send a message to your contacts by using AutoVoice
+---
+layout: tutorial
+title: Send a message to your contacts by using AutoVoice
+---
 This tutorial will explain, how to to send a message to a specific contact.
 We can use a command like this: **Send a message to John.**
 
