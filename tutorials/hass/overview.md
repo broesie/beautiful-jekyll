@@ -9,3 +9,7 @@ Those are categorized below.
 - [Installing Themes](installation/install_themes.md)
 - [Theme: Dark Cyan](themes/darkcyan.md)
 - [Theme: Dark Red](themes/darkred.md)
+
+# Tasker Integration:
+- [Controlling By Voice](tasker_integration/voice_commands.md)
+
