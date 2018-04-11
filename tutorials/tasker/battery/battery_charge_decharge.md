@@ -1,4 +1,7 @@
-# Notify when battery is charging and decharging
+---
+layout: tutorial
+title: Notify when battery is charging and decharging
+---
 This tutorial will create a notificiation that will let you know when the battery is charging or decharging. It can be useful eg when the cable doesn't give good contact, etc...
 
 ### Requirements:
