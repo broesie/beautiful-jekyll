@@ -1,3 +1,8 @@
+---
+layout: post
+title: First post!
+---
+
 # Check Birthdays
 This task will check if there is a birthday today. If so, it will notify you.
 
