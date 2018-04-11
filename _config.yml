@@ -25,7 +25,7 @@ description: A Tasker Guru
 navbar-links:
   Tutorials:
     - Home Assistant:
-    - Tasker: "https://broesie.github.io/tutorials/tasker/overview"
+    - Tasker: "https://broesie.github.io/tutorials/tasker/overview.md"
   About Me: "aboutme"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
