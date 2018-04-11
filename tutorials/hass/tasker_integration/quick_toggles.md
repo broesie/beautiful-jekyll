@@ -8,7 +8,7 @@ comments: true
 - AutoNotifcation
 
 ### Plugins:
-AutoNotification can be found [here](https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification28)
+AutoNotification can be found [here](https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification)
 I recommend to buy the unlocked version, or to get a subscription to AutoApps (full pack, all unlocked + betas + alphas)
 
 ### Step 1: Checking your global variables
