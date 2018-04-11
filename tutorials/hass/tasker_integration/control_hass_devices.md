@@ -10,7 +10,7 @@ In this tutorial, you will learn how to control your devices straight from Taske
 - Tasker
 
 ### Step 1: Check your global variables
-Be sure before you start, that you have setup your tasker correctly, by creating global variables. See also how to:[configure Tasker for Home Assistant](https://broesie.github.io/tutorials/hass/tasker_integration/set_global_vars)
+Be sure before you start, that you have setup your tasker correctly, by creating global variables. See also how to [configure Tasker for Home Assistant](https://broesie.github.io/tutorials/hass/tasker_integration/set_global_vars)
 
 ### Step 2: Creating your tasks
 I prefer to create a task for every state, eg: to power on my living lights, to power off my living lights, etc... The reason is very simple, that way I can call the task in other tasks as well, just by using **Perform Task**, so I don't have to configure it again.
