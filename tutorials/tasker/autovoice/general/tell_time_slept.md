@@ -1,4 +1,7 @@
-# Tell Time Slept
+---
+layout: tutorial
+title: Tell Time Slept
+---
 This task will tell you the time that you slept.
 
 ### Requirements:
