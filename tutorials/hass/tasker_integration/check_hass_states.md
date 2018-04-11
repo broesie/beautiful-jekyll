@@ -1,3 +1,8 @@
+---
+layout: tutorial
+title: Check States of Home-Assistant Devices
+comments: true
+---
 This tutorial will learn you how to check states in tasker of your Home Assistant devices...
 
 ## Requirements:
