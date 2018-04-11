@@ -1,4 +1,7 @@
-# Notify when battery reach specific percentage
+---
+layout: tutorial
+title: Notify when battery reach specific percentage
+---
 This tutorial will create a notificiation that will let you know when the battery reached a specific percentage.
 This is pretty simple!
 
