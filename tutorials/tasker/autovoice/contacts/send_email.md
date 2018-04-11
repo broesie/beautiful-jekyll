@@ -1,5 +1,8 @@
-# Send a e-mail to your contacts by using AutoVoice
-This tutorial will explain, how to to send a e-mail to a specific contact.
+---
+layout: tutorial
+title: Send an e-mail to your contacts by using AutoVoice
+---
+This tutorial will explain, how to to send an e-mail to a specific contact.
 We can use a command like this: **Send an e-mail to John.**
 
 ### Requirements:
