@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-title: First post!
+title: Check Birthdays
 ---
 
 # Check Birthdays
