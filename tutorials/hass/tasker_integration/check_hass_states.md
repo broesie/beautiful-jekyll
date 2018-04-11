@@ -18,11 +18,11 @@ I will explain both methods:
 #### Method 1: Using HTTP GET
 - Do a **HTTP GET**: as port: **yourhost/api/states/yourentity?api_password=xxxx**
 In my case I use global variables, so I have it configure it 1 time in my programming. (see also how to [configure Tasker for Home Assistant](https://broesie.github.io/tutorials/hass/tasker_integration/set_global_vars).
-So mine will be: %HASS_STATE%HASS_TOPLICHT%HASS_PSW
+So mine will be: **%HASS_STATE%HASS_TOPLICHT%HASS_PSW**
 - Do a variable set **%source** to **%HTTPD**
 Now you have to split the variables… If you don’t know what variables are, and what you can do, check my tutorial about variables: https://www.youtube.com/watch?v=F2IJJlUGF9E
-- Do a variable split: **%source** splitter **“state”**
-- Do a variable split: **%source2** splitter **"**
+- Do a variable split: **%source** splitter **state**
+- Do a variable split: **%source2** splitter "
 - Do a variable set: **%state** to **%source21**
 
 your result will be in **%source21** (you can use a flash, to check it)
