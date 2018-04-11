@@ -3,6 +3,7 @@ layout: tutorial
 title: Updating your Home-Assistant version: Rpi - Jessie)
 comments: true
 ---
+
 ```
 - Open Putty
 - Login to your Pi
@@ -10,5 +11,6 @@ comments: true
 - source /srv/hass/hass_venv/bin/activate
 - pip3 install --upgrade homeassistant
 ```
+
 # Documentation:
 - [documentation](https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/#upgrading)
