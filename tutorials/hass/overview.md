@@ -11,5 +11,6 @@ Those are categorized below.
 - [Theme: Dark Red](themes/darkred.md)
 
 # Tasker Integration:
+- [Set Global Vars](tasker_integration/set_global_vars.md)
 - [Controlling By Voice](tasker_integration/voice_commands.md)
 
