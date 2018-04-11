@@ -1,4 +1,7 @@
-# Tell Date
+---
+layout: tutorial
+title: Tell Date
+---
 This task will tell you the current date. This is the long format.
 
 ### Requirements:
