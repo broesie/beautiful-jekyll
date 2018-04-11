@@ -1,5 +1,4 @@
 # Home-Assistant
-Current Version: 0.35.3  
 Running on a Raspberry PI 3 Model B  
 Raspbian Jessie 8.0
 
