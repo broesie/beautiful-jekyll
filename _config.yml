@@ -182,7 +182,7 @@ exclude:
 
 # prose.io config
 prose:
-  rooturl: '_posts'
+  rooturl: 'tasker'
   media: 'img'
   ignore:
     - 404.html
