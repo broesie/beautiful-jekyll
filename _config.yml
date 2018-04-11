@@ -97,7 +97,7 @@ social-network-links:
 share-links-active:
   twitter: true
   facebook: true
-  google: false
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer
@@ -158,6 +158,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
+      show-share: true # add sharing buttons to all blog posts
   -
     scope:
       path: "" # all files
