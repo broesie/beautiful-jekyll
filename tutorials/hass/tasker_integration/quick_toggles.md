@@ -1,6 +1,6 @@
 ---
 layout: tutorial
-title: Check States of Home-Assistant Devices
+title: Quick Toggles
 comments: true
 ---
 ## Requirements: 
@@ -15,7 +15,7 @@ I recommend to buy the unlocked version, or to get a subscription to AutoApps (f
 Be sure before you start, that you have setup your tasker correctly, by creating global variables. See also how to [configure Tasker for Home Assistant](https://broesie.github.io/tutorials/hass/tasker_integration/set_global_vars)
 
 ### Step 2: Check your tasks to control your devices
-In previous tutorials, was explained how to create seperate tasks to control your devices in Tasker. Be sure that you have created such tasks. It is explained here: https://github.com/broesie/Home-Assistant/blob/master/Tutorials/Tasker/Control_Hass_Devices.md
+In previous tutorials, was explained how to create seperate tasks to control your devices in Tasker. Be sure that you have created such tasks. It is explained [here](https://broesie.github.io/tutorials/hass/tasker_integration/control_hass_devices)
 
 Example task of **HA - LivingTop On** will contain:
 
