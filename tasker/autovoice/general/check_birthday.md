@@ -2,8 +2,6 @@
 layout: tutorial
 title: Check Birthdays
 ---
-
-# Check Birthdays
 This task will check if there is a birthday today. If so, it will notify you.
 
 ### Requirements:
