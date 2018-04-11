@@ -19,7 +19,7 @@ Be sure before you start, that you have setup your tasker correctly, by creating
 
 ### Step 2: Check your tasks to control your devices
 In previous tutorials, was explained how to create seperate tasks to control your devices in Tasker.
-Be sure that you have created such tasks. It is explained here: https://github.com/broesie/Home-Assistant/blob/master/Tutorials/Tasker/Control_Hass_Devices.md
+Be sure that you have created such tasks. It is explained [here](https://broesie.github.io/tutorials/hass/tasker_integration/control_hass_devices.md)
 
 ### Step 3: Configure your autovoice plugin:
 
