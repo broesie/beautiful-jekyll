@@ -3,15 +3,13 @@ layout: tutorial
 title: Control Home-Assistant by voice (in any language)
 comments: true
 ---
-# Home-Assistant: Control it by voice by using Tasker (in any language)
-
 This is a tutorial how you can control your devices by using your voice in your own language....
 All this can be also triggered by Google Now.
 
 ## Requirements:
 - An android phone
 - Tasker
-- Autovoice
+- AutoVoice
 
 ## Setup Tasker:
 
