@@ -3,97 +3,85 @@ layout: tutorial
 title: Control Home-Assistant by voice (in any language)
 comments: true
 ---
+# Home-Assistant: Control it by voice by using Tasker (in any language)
+
 This is a tutorial how you can control your devices by using your voice in your own language....
 All this can be also triggered by Google Now.
 
 ## Requirements:
 - An android phone
 - Tasker
-- AutoVoice
+- Autovoice
 
 ## Setup Tasker:
 
-### Step 1: Create your configuration task
+### Step 1: Check your global variables
 
-First I like to setup several thing, so I made a task, that I only need to run once... I'm putting my host, password and my devices in here. (When a device changes, then I only need to change it on 1 place, and all the other tasks will change as well).
+See the file configuration, how to setup the global variables. This is explained here: https://github.com/broesie/Home-Assistant/blob/master/Tutorials/Tasker/Setting_Global_Variables.md
 
-#### So a config task would be like this in tasker:
+### Step 2: Check your tasks to control your devices
+In previous tutorials, was explained how to create seperate tasks to control your devices in Tasker.
+Be sure that you have created such tasks. It is explained here: https://github.com/broesie/Home-Assistant/blob/master/Tutorials/Tasker/Control_Hass_Devices.md
 
-- Variable set: **%HASS_PSW** to **?api_password=xxxxx**
-- Variable set: **%HASS_SERVICE** to **http://xxxx:8123/api/services/** 
-- Variable set: **%HASS_STATE** to **http://xxxx:8123/api/states/**
+### Step 3: Configure your autovoice plugin:
 
-#### Add then your devices with your correct ID of HASS below eg:
-
-- Variable set: **%HASS_WOL** to **switch.wol**
-- Variable set: **%HASS_TOPLIGHT** to **light.living_toplight**
-- Variable set: **%HASS_SIDELIGHT** to **light.living_sidelight**
-
-After creating this, you need to run this task, so Tasker knows all the variables and remember it.
-
-### Step 2: Configure your autovoice plugin:
-
-- Open de app: **AutoVoice**
+- **Open de app: AutoVoice**
 - **Activate Google Now integration**, if you want integration with Google Now
-- Set your language: **General settings > Default Recognize Settings > Language Settings > Language (Also Language Code)**
+- Set your **language: General settings > Default Recognize Settings > Language Settings > Language (Also Language Code)**
 
-Don't forget to enable in your android settings, the accessibility for Autovoice
+**Don't forget to enable in your android settings, the accessibility for Autovoice**
 
-### Step 3: Create your profile and task
+### Step 4: Create your profile and task
 
-#### Example 1: task to turn off/turn on task with if-else statements inside the task
+#### Example 1: task to turn off/turn on task 
+
+Let's assume you already created a task called **HA - LivingTop On** and **HA - LivingTop Off** in step 2.
 
 ##### Your profile:
 
-- Create a new profile
-- Choose **Event > Plugin > Autovoice Recognize**
-- Choose **Advanced**
-- **Checkmark Regex**
-- As command filter use: ```(?<task>.+) my (?<device>.+)```
+- Create a **new profile**
+  - Choose **Event > Plugin > Autovoice Recognize**
+  - Choose **Advanced**
+  - **Checkmark Regex**
+  - As **command filter** use: ```turn (?<state>.+) my (?<device>.+)```
 
 ##### Your task:
 
 Work with if-else function
 
 I prefer to use just the If statement instead of the if-else statement, because I can collapse my code...
-This is a task to turn on the living lights
-- **If %task ~ turn on AND %device ~ living lights (turn on living lights)**
-- Variable set: **%service to light/turn_on**
-- **HTTP Post:**
- - Service port: **%HASS_SERVICE%service%HASS_PSW**
- - In data / file: **{"entity_id":"%HASS_TOPLIGHT","brightness":"255"}**
- - content/type: **application/JSON**
+
+#### Example 1: Turn Living Top Lights On or Off
+
+- **If %state ~R on AND %device ~R living lights** (turn on living lights), use match regex!
+  - **Perform Task: HA - LivingTop On** (See step 2)
 - **End if**
 
-This is a task to turn off the living lights
-- **If %task ~ turn off AND %device ~ living lights (turn off living lights)**
-- Variable set: **%service to light/turn_off**
-- **HTTP Post:**
- - Service port: **%HASS_SERVICE%service%HASS_PSW**
- - In data / file: **{"entity_id":"%HASS_TOPLIGHT"}**
- - content/type: **application/JSON**
+- **If %state ~R off AND %device ~R living lights** (turn off living lights), use match regex!
+  - **Perform Task: HA - LivingTop Off** (See step 2)
 - **End if**
 
-...
+Also it can be shorter, if you want: just by using eg: **Perform Task: HA - LivingTop Off** and checkmark the if-statement, and put there: **If %state ~R off AND %device ~R living lights**. So in that case, you only use 1 action, instead of 3...
 
 #### Example 2: Dim lights task
 
 ##### Your profile:
 
-- Create a new profile
-- Choose **Event > Plugin > Autovoice Recognize**
-- Choose **Advanced**
-- **Checkmark Regex**
-- As command filter use: ```dim (?<device>.+) to (?<percentage>.+)%```
+- Create a **new profile**
+  - **Choose Event > Plugin > Autovoice Recognize**
+  - **Choose Advanced**
+  - **Checkmark Regex**
+  - As **command filter** use: ```dim (?<device>.+) to (?<level>.+)%```
 
 ##### Your task:
 
-- **If %device ~ living lights**
-- Variable set: **%service to light/turn_on**
-- **HTTP Post:**
- - Service port: **%HASS_SERVICE%service%HASS_PSW**
- - In data / file: **{"entity_id":"%HASS_TOPLIGHT","brightness":"%percentage"}**
- - content/type: **application/JSON**
+- ```Variable set: %percent to round(255/100*%level)``` **(Enable Do Maths!)**
+- **If %device ~R living lights** (use match regex!)
+  - **Variable set: %service** to **light/turn_on**
+  - **HTTP Post:**
+    - Service port: **%HASS_SERVICE%service%HASS_PSW**
+    - In data / file: **{"entity_id":"%HASS_TOPLIGHT","brightness":"%percent"}**
+    - content/type: **application/JSON**
 - **End if**
 
 #### Other Commands
@@ -103,7 +91,5 @@ Above a little example to turn on or turn off things, but you can create also ot
 - ```dim (?<device>.+) to (?<percentage>.+)%```
 - ```activate (?<scene>.+) mode```
 - ....
-
-You only need to change data and attributes...
 
 The beauty of this, is that I can use Google now, so I can use Google AI to recognize my speech, and when I say a command by saying OK Google, it will also send it to my tasker autovoice...
