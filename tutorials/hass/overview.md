@@ -3,6 +3,7 @@ Those are categorized below.
 
 # Installation:
 - [Installing Home-Assistant](installation/installation_process.md)
+- [Update Home-Assistant](installation/updating.md)
 
 # Themes:
 - [Installing Themes](installation/install_themes.md)
