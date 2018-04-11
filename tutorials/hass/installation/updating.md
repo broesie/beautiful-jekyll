@@ -3,7 +3,7 @@ layout: tutorial
 title: Updating your Home-Assistant
 comments: true
 ---
-## Updating (Rpi - Jessie)
+## Updating (Rpi - Jessie):
 
 ```
 - Open Putty
