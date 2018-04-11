@@ -6,3 +6,5 @@ Those are categorized below.
 
 # Themes:
 - [Installing Themes](installation/install_themes.md)
+- [Theme: Dark Cyan](themes/darkcyan.md)
+- [Theme: Dark Red](themes/darkred.md)
