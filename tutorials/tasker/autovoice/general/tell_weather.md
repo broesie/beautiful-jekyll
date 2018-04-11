@@ -1,4 +1,7 @@
-# Tell Weather Forecast
+---
+layout: tutorial
+title: Tell Weather
+---
 This task will tell you the weather forecast using Wunderground.
 
 ### Requirements:
