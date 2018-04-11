@@ -1,4 +1,7 @@
-# Get the age of your contacts by using AutoVoice
+---
+layout: tutorial
+title: Get age of your contacts by using AutoVoice
+---
 This tutorial will explain, how to retrieve the age of a specific contact.
 We can use a command like this: **how old is John.**
 
