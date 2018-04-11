@@ -30,7 +30,7 @@ Also check my youtube channel. I made more then 100 videotutorials of tasker. Yo
 
 ## Voice triggered:
 ### Voice General:
-- [Voice General: Tell Date](tutorials/tasker/autovoice/general/tell_date.md)
+- [Voice General: Tell Date](autovoice/general/tell_date.md)
 - [Voice General: Tell Time](tutorials/tasker/autovoice/general/tell_time.md)
 - [Voice General: Weather Forecast](tutorials/tasker/autovoice/general/tell_weather.md)
 
